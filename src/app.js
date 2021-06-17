@@ -72,12 +72,45 @@ galleryItems.forEach(galleryItem => {
   
   const src = `${galleryItem.preview}`;
   const alt = `${galleryItem.description}`;
-  const imageItem = `<li><a><img src = "${src}" alt = "${alt}"></a></li>`
+  const imageItem = `<li><div><img src = "${src}" alt = "${alt}"></div></li>`
   
-
   imageItems.push(imageItem);
 });
  
 galleryEl.insertAdjacentHTML('beforeend', imageItems.join(''));
+
+
+
+
+
+
+
+// const galleryEl = document.querySelector(".js-gallery");
+ 
+// const imageItems = [];
+
+ 
+// galleryItems.forEach(galleryItem => {
+  
+//   const itemEl = document.createElement('li');
+//   itemEl.classList.add('gallery__item');
+  
+//   const linkEl = document.createElement('a');
+//   linkEl.classList.add('gallery__link');
+//   linkEl.href = `${galleryItem.original}`;
+
+//   const imageEl = document.createElement('img');
+//   imageEl.classList.add('gallery__image');
+//   imageEl.src = `${galleryItem.preview}`;
+//   imageEl.alt = `${galleryItem.description}`;
+
+//   itemEl.appendChild(linkEl);
+//   linkEl.appendChild(imageEl);
+//   console.log(itemEl);
+  
+//   imageItems.push(itemEl);  
+// });
+
+// galleryEl.insertAdjacentHTML('beforeend', imageItems.join(''));
 
 
